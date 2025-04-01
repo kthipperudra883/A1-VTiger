@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: sample.TestNGPractice
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.480 s -- in sample.TestNGPractice
