@@ -24,7 +24,7 @@ public class BaseClass {
 	public SeleniumUtility sUtil = new SeleniumUtility();
 	public PropertiesUtility pUtil = new PropertiesUtility();
 	public ExcelUtility eUtil = new ExcelUtility();
-	
+
 	@BeforeSuite(alwaysRun=true)
 	public void dbConnection() {
 		System.out.println("DB Connection created");
@@ -34,7 +34,7 @@ public class BaseClass {
 	public void launchBrowser(@Optional("chrome")String BROWSER) throws IOException {
 		if (BROWSER.equals("chrome"))
 		{
-			 driver = new ChromeDriver();
+			driver = new ChromeDriver();
 		}
 		else  if(BROWSER.equals("edge"))
 		{
@@ -63,7 +63,7 @@ public class BaseClass {
 		lp.loginToApplication(UN, PWD);
 		System.out.println("Login successful");
 	}
-	
+
 	@AfterMethod(alwaysRun=true)
 	public void signoutOperation()
 	{
@@ -71,28 +71,21 @@ public class BaseClass {
 		hp.signOutOperation(driver);
 		System.out.println("Logout Successful");
 	}
-	
+
 	@AfterClass(alwaysRun=true)
 	public void closeBrowser()
 	{
+		driver.quit();
 		System.out.println("Browser closed successfully");
 	}
-	
+
 	@AfterSuite(alwaysRun=true)
 	public void CloseDBConnection()
 	{
 		System.out.println("DB connection closed");
 	}
 
-		
-		
-		
-		
-		
-				
-		
-	
-	}
-	
+}
+
 
 

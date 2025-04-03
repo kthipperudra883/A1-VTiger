@@ -15,22 +15,22 @@ public class TC_005 extends BaseClass {
 		hp.clickOnContactsMenu();
 
 		Contactspage cp = new Contactspage(driver);
-	    cp.clickCreateNewContactIcon();
-		
+		cp.clickCreateNewContactIcon();
+
 		String lName = eUtil.getDataFromExcelFile("Contacts", 5, 1);
-		String email = eUtil.getDataFromExcelFile("Leads", 5, 2);
-		String mobile = eUtil.getDataFromExcelFile("Leads", 5, 3);
-		String mailingCity = eUtil.getDataFromExcelFile("Leads", 5, 4);
-		
+		String email = eUtil.getDataFromExcelFile("Contacts", 5, 2);
+		String mobile = eUtil.getDataFromExcelFile("Contacts", 5, 3);
+		String mailingCity = eUtil.getDataFromExcelFile("Contacts", 5, 4);
+
 		CreatingNewContactPage cncp = new CreatingNewContactPage(driver);
 		cncp.CreateNewContact(lName, email, mobile, mailingCity);
-		
+
 	}	
 
-	
-	}	
 
-		
+}	
+
+
 
 
 
