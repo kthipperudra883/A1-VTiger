@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 22 14:16:19 IST 2025</td>
+<td>Started on:</td><td>Thu Apr 03 14:41:51 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55215 ms)</td>
+<tr><td>Total time:</td><td>136 seconds (136258 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,27 +76,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCaseRepo.TC_001.LE_001()'><b>LE_001</b><br>Test class: testCaseRepo.TC_001<br/>
-<a href="#Output-880282841" onClick='toggleBox("Output-880282841", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-880282841" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-880282841">
-LE_001->On Test start<br/>
-LE_001->On Test failure<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: null
-	at testCaseRepo.TC_001.LE_001(TC_001.java:27)
+<td title='testCaseRepo.TC_003.signoutOperation()'><b>signoutOperation</b><br>Test class: testCaseRepo.TC_003</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=134.0.3124.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4198a5dab3a46ebfca0c89e923174cec, actions {actions=[org.openqa.selenium.interactions.Sequence@65a48602]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60366}, msedge: {msedgedriverVersion: 134.0.3124.85 (4b32110e83d3..., userDataDir: C:\Users\kthip\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60366/devtoo..., se:cdpVersion: 134.0.3124.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4198a5dab3a46ebfca0c89e923174cec
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
+	at objectRepo.HomePage.signOutOperation(HomePage.java:63)
+	at genericUtility.BaseClass.signoutOperation(BaseClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace880282841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace880282841'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at testCaseRepo.TC_001.LE_001(TC_001.java:27)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1192603187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1192603187'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=134.0.3124.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4198a5dab3a46ebfca0c89e923174cec, actions {actions=[org.openqa.selenium.interactions.Sequence@65a48602]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60366}, msedge: {msedgedriverVersion: 134.0.3124.85 (4b32110e83d3..., userDataDir: C:\Users\kthip\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60366/devtoo..., se:cdpVersion: 134.0.3124.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4198a5dab3a46ebfca0c89e923174cec
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
+	at objectRepo.HomePage.signOutOperation(HomePage.java:63)
+	at genericUtility.BaseClass.signoutOperation(BaseClass.java:71)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -120,8 +156,8 @@ LE_001->On Test failure<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>testCaseRepo.TC_001@75db5df9</td></tr>
+<td>13</td>
+<td>testCaseRepo.TC_003@65d09a04</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -132,18 +168,44 @@ LE_001->On Test failure<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCaseRepo.TC_003.LE_003()'><b>LE_003</b><br>Test class: testCaseRepo.TC_003<br/>
-<a href="#Output-779051277" onClick='toggleBox("Output-779051277", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCaseRepo.TC_001.demo()'><b>demo</b><br>Test class: testCaseRepo.TC_001<br/>
+<a href="#Output-848409667" onClick='toggleBox("Output-848409667", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-779051277" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-779051277">
+<a href="#Output-848409667" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-848409667">
+demo->On Test start<br/>
+demo->On Test success<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testCaseRepo.TC_001@399c4be1</td></tr>
+<tr>
+<td title='testCaseRepo.TC_001.LE_001()'><b>LE_001</b><br>Test class: testCaseRepo.TC_001<br/>
+<a href="#Output-1480805145" onClick='toggleBox("Output-1480805145", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1480805145" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1480805145">
+LE_001->On Test start<br/>
+LE_001->On Test success<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>testCaseRepo.TC_001@399c4be1</td></tr>
+<tr>
+<td title='testCaseRepo.TC_003.LE_003()'><b>LE_003</b><br>Test class: testCaseRepo.TC_003<br/>
+<a href="#Output-598049166" onClick='toggleBox("Output-598049166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-598049166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-598049166">
 LE_003->On Test start<br/>
 LE_003->On Test success<br/>
 </div>
 </td>
 <td></td>
-<td>24</td>
-<td>testCaseRepo.TC_003@71e9ddb4</td></tr>
+<td>31</td>
+<td>testCaseRepo.TC_003@65d09a04</td></tr>
 </table><p>
 </body>
 </html>
